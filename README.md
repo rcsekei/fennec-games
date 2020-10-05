@@ -16,8 +16,10 @@ Program nem funkcionális követelményei
     Az oldal sebessége 100 felhasználóig nem fog csökkenni.
 
 User Story:
-    Space Invaders:
+Space Invaders:
 
-        János felkeresve az oldalt a béta időszakában még csak egy játékot talál, a Space Invaders-t. Játszik vele egy keveset, majd lementi az oldalt a könyvjelzői közé, mert azt olvasta az oldalon, hogy idővel újabb játékok fognak megjelenni a felületen.
+    János felkeresve az oldalt a béta időszakában még csak egy játékot talál, a Space Invaders-t.
+    Játszik vele egy keveset, majd lementi az oldalt a könyvjelzői közé, mert azt olvasta az oldalon, hogy idővel újabb játékok fognak megjelenni a felületen.
 
-        Péter ELTE hallgató, és annyira megtetszett neki az újratervezett Space Invaders, hogy napok óta le sem tudja tenni. A villamoson, a metrón, még előadás közben is ezzel játszik a telefonján.
+    Péter ELTE hallgató, és annyira megtetszett neki az újratervezett Space Invaders, hogy napok óta le sem tudja tenni.
+    A villamoson, a metrón, még előadás közben is ezzel játszik a telefonján.
