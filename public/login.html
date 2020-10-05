@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fennec Games - Login</title>
+  <link rel="stylesheet" href="scss/dist/css/style.css" />
+  <link rel="stylesheet" href="scss/dist/css/loginStyle.css" />
+  <script src="https://kit.fontawesome.com/eab59ddc32.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <button id="menu-toggle">Ξ</button>
+    <ul id="menu">
+      <li><a href="index.html" id="main-menu">Main Menu</a></li>
+      <li class="logged-in"><a href="profile.html">Profile</a></li>
+      <li class="logged-out"><a href="login.html" id="log-in">Log in</a></li>
+      <li class="logged-out"><a href="register.html" id="sign-up">Sign up</a></li>
+      <li class="logged-in"><a href="index.html" id="log-out">Log out</a></li>
+    </ul>
+        <h1 id="currentUserHeader">Fennec Games</h1>
+        <img src="resource/fennec.png" class="icon">
+  </nav>
+  <main>
+    <div class="head">
+      <h2>Log in</h2>
+      <a href="profile.html"><i class="far fa-user-circle fa-7x sign-in-icon"></i></a>
+    </div>
+    <div class="login">
+    <form id="login-form">
+      <div class="input-container">
+        <i class="fas fa-envelope fa-2x"></i>
+        <input id="login-email" class="input-field" type="email" placeholder="E-mail" name="mail">
+      </div>
+      <div class="input-container">
+        <i class="fas fa-key fa-2x"></i>
+        <input id="login-password" class="input-field" type="password" placeholder="Password" name="psw">
+      </div>
+      <button type="submit" class="btn">Sign in</button>
+    </form>
+    <div class="reg">
+      Don't have an account? <a href="register.html">Sign up now!</a>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <div class="left">
+        Privacy Policy<br>
+        Disclaimer
+    </div>
+    <div class="right">
+        <img src="resource/fb_icon.png"> 
+        <img src="resource/tw_icon.png">
+    </div>
+</footer>
+
+  <div id="backdrop"></div>
+  <!-- JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+  <script src="scripts/firebase-init.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/auth-login.js"></script>
+</body>
+</html>

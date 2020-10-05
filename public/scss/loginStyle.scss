@@ -1,0 +1,95 @@
+@import './variables';
+
+main{
+  font-size: 18px;
+  
+}
+
+
+
+.input-container{
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.head{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  h2{
+    color: lighten($form-color,10%);
+    font-size: 32px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: auto;
+    width: 60%;
+  }
+  .sign-in-icon{
+    color: $accent-color;
+    margin-bottom: 10px;
+    padding: auto;
+  }
+}
+.login{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  form{
+    i{
+      padding: 10px;
+      background: $form-color;
+      color: $primary-color;
+      min-width:50px;
+      text-align: center;
+    }
+  }
+  .input-field{
+    background: $accent-color;
+    border: none;
+    color: $text-color;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+
+    &:focus{
+      border: 2px solid $form-color;
+    }
+  }
+}
+
+.btn{
+  background: darken($form-color,10%);
+  border: 1px solid black;
+  color: $primary-color;
+  cursor: pointer;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.8;
+  min-height: 50px;
+  width: 100%;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.reg{
+  color: $text-color;
+  text-align: center;
+  margin: auto;
+
+  a{
+    color: $form-color;
+    font-variant: small-caps;
+    text-decoration: underline;
+    &:hover{
+      background: $highlight-color;
+    }
+  }
+}

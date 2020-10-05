@@ -1,0 +1,20 @@
+{
+  "short_name": "Fennec Games",
+  "name": "Fennec Games App",
+  "icons": [
+    {
+      "src": "/resource/fennec192.png",
+      "type": "image/png",
+      "sizes": "192×192"
+    },
+    {
+      "src": "/resource/fennec512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#1b464a",
+  "background_color": "#1b464a"
+}

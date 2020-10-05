@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <link rel="stylesheet" href="scss/dist/css/style.css" />
+  <script src="https://kit.fontawesome.com/eab59ddc32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <button id="menu-toggle">Ξ</button>
+    <ul id="menu">
+      <li><a href="index.html" id="main-menu">Main Menu</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="login.html" id="log-in">Log in</a></li>
+      <li><a href="register.html" id="sign-up">Sign up</a></li>
+      <li><a href="login.html" id="log-out">Log out</a></li>
+    </ul>
+        <h1 id="currentUserHeader">Fennec Games</h1>
+        <img src="resource/fennec.png" class="icon">
+  </nav>
+
+  <!-- CONTENT BEGIN -->
+  <!-- CONTENT END -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="left">
+      Privacy Policy<br>
+      Disclaimer
+    </div>
+    <div class="right">
+      <img src="resource/fb_icon.png" alt="fb">
+      <img src="resource/tw_icon.png" alt="twttr">
+    </div>
+  </footer>
+
+  <div id="backdrop"></div>
+  
+  <!-- External JavaScript files -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+  <script src="scripts/firebase-init.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/auth-check.js"></script>
+  <script src="scripts/auth-logout.js"></script>
+</body>
+</html>

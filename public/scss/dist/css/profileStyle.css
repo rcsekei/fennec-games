@@ -1,0 +1,214 @@
+.head {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.head h2 {
+  color: #f0cfb2;
+  font-size: 32px;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  padding: auto;
+  width: 60%;
+}
+
+.head .sign-in-icon {
+  color: #7e7e7e;
+  margin-bottom: 40px;
+  padding: auto;
+}
+
+.head .pic-upload {
+  background-color: #e0995c;
+  border: 1px solid #272727;
+  color: #272727;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 40px;
+  opacity: 0.8;
+  width: 60%;
+}
+
+.head .pic-upload:hover {
+  opacity: 1;
+}
+
+main {
+  text-align: center;
+}
+
+.image-cropper {
+  border: 3px solid #7e7e7e;
+  border-radius: 75%;
+  display: none;
+  height: 175px;
+  overflow: hidden;
+  position: relative;
+  width: 175px;
+  margin-bottom: 25px;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.friends-list {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+
+.friends-list h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.friends-list table {
+  border: 1px solid #7e7e7e;
+  color: #e9e9e9;
+  width: 100%;
+}
+
+.friends-list table th {
+  border-bottom: 1px solid #7e7e7e;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.friends-list table th:nth-child(2) {
+  width: 20px;
+}
+
+.friends-list table th .delete {
+  color: #e9e9e9;
+  font-size: 8px;
+  width: 20px;
+}
+
+.friends-list table td:nth-child(2) {
+  width: 20px;
+}
+
+.friends-list table td .delete {
+  color: #990000;
+  text-decoration: none;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inf {
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.inf:hover {
+  background: #e0995c;
+  border: 1px solid #272727;
+  color: #272727;
+  opacity: 0.9;
+}
+
+.shown {
+  display: none;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  width: 0%;
+}
+
+#add-friend-btn {
+  background-color: #e0995c;
+  border: 1px solid #272727;
+  color: #272727;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  min-height: 40px;
+  opacity: 0.8;
+  width: 60%;
+}
+
+#add-friend-btn a {
+  color: #272727;
+  text-decoration: none;
+}
+
+#add-friend-btn:hover {
+  opacity: 1;
+}
+
+#modal {
+  background: #272727;
+  border: 3px solid #7e7e7e;
+  position: fixed;
+  display: none;
+  left: 20%;
+  top: 30%;
+  width: 60%;
+  z-index: 101;
+}
+
+#modal .friend-input {
+  width: 100%;
+  background: #7e7e7e;
+  color: #272727;
+  font-size: 23px;
+  font-variant: small-caps;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#modal input {
+  background: #e9e9e9;
+  border: 2px solid #7e7e7e;
+  font-size: 16px;
+  margin-right: 2px;
+  padding: auto;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#modal button {
+  background-color: #e0995c;
+  border: 2px solid #272727;
+  color: #272727;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  min-height: 30px;
+  opacity: 0.8;
+  width: 50%;
+}
+
+#modal button#cancel-btn {
+  width: 30%;
+}
+
+#modal button a {
+  color: #272727;
+  text-decoration: none;
+}
+
+#modal button:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=profileStyle.css.map */

@@ -1,0 +1,207 @@
+body {
+  background: #272727;
+  color: #e9e9e9;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #5a5a5a;
+  border: 2px soldi black;
+  color: #e9e9e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+nav h1 {
+  font-size: 24px;
+  margin: auto;
+}
+
+nav .icon {
+  margin: 5px 5px;
+  width: 40px;
+}
+
+nav a {
+  border: 1px solid black;
+  color: #e9e9e9;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #424242;
+}
+
+nav li {
+  height: 40px;
+}
+
+#menu {
+  background: #5a5a5a;
+  border: 1px solid black;
+  height: 120px;
+  left: 0;
+  margin: 0;
+  min-width: 200px;
+  padding: 0;
+  position: fixed;
+  top: 50px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  width: 100%;
+  z-index: 200;
+}
+
+#menu.open {
+  -webkit-box-shadow: 0 15px 15px #272727;
+  box-shadow: 0 15px 15px #272727;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+#menu li {
+  display: block;
+  list-style: none;
+}
+
+#menu li a {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  font-variant: small-caps;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+#menu li a:hover {
+  background: #424242;
+}
+
+#menu li a span {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+#menu li a i {
+  padding-left: 10px;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: #e9e9e9;
+  display: fixed;
+  font-weight: bold;
+  font-size: 26px;
+  height: 40px;
+  left: 5px;
+  margin: 0;
+  position: relative;
+  top: 5px;
+  width: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  #menu-toggle {
+    display: none;
+  }
+}
+
+#backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  z-index: 100;
+}
+
+#backdrop.visible {
+  display: block;
+}
+
+.thumbnail {
+  border: 1px solid black;
+  display: block;
+  width: 90%;
+  margin: 5%;
+}
+
+.play-btn {
+  background: #7e7e7e;
+  border: 2px solid black;
+  color: #272727;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  margin: auto;
+  opacity: 0.9;
+  width: 200px;
+}
+
+.play-btn:hover {
+  opacity: 1;
+}
+
+.description {
+  color: #e9e9e9;
+  font-size: 18px;
+  font-style: italic;
+  overflow: auto;
+  padding: 0 0 30px 0;
+  text-align: justify;
+  margin: 5%;
+}
+
+footer {
+  background: #5a5a5a;
+  border: 1px solid black;
+  bottom: 0;
+  color: #e9e9e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: italic;
+  font-size: 16px;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+
+footer .left {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+}
+
+footer .right {
+  text-align: right;
+  right: 0;
+  margin-top: 2%;
+  padding: auto;
+  width: 100%;
+}
+
+footer .right img {
+  margin-right: 3%;
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */

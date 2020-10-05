@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fennec games - Profile</title>
+  <link rel="stylesheet" href="scss/dist/css/style.css" />
+  <link rel="stylesheet" href="scss/dist/css/profileStyle.css" />
+  <script src="https://kit.fontawesome.com/eab59ddc32.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav>
+    <button id="menu-toggle">Ξ</button>
+    <ul id="menu">
+      <li><a href="index.html" id="main-menu">Main Menu</a></li>
+      <li class="logged-in"><a href="profile.html">Profile</a></li>
+      <li class="logged-out"><a href="login.html" id="log-in">Log in</a></li>
+      <li class="logged-out"><a href="register.html" id="sign-up">Sign up</a></li>
+      <li class="logged-in"><a href="index.html" id="log-out">Log out</a></li>
+    </ul>
+    <h1 id="currentUserHeader"></h1>
+    <img src="resource/fennec.png" class="icon">
+  </nav>
+
+
+  <main>
+    <div class="head">
+      <h3 id="currentUserName"></h3>
+      <i class="far fa-user-circle fa-7x sign-in-icon" id="i"></i><br>
+      <div class="profile" id="prof">
+        <img src="" id="profile-pic" class="image-cropper">
+      </div>
+      <button class="pic-upload" id="pic-upload">Upload profile picture</button><br>
+      <label for="capture" class="inf">Choose a file</label>
+      <input type="file" id="capture" accept="image/*;capture=camera" class="inputfile" /><br>
+    </div>
+
+
+    <div class="friends-list">
+      <h3>Friends</h3>
+      <table>
+        <tr>
+          <th>Usernames</th>
+          <th class="delete">Delete</th>
+        </tr>
+
+        <!-- <tr>
+          <td>Template</td>
+          <td><a href="#" class="delete"><i class="fas fa-trash"></i></a></td>
+        </tr> -->
+
+      </table>
+    </div>
+    <button class="add-friend-btn" id="add-friend-btn">Add friend</button>
+    <div id="modal">
+      <div class="friend-input">
+        <label>Enter the username:</label><br>
+      </div>
+      <input class="friend-name" type="username" id="username" placeholder="User123345"><br>
+      <button id="send-request">Send Request</button>
+      <button id="cancel-btn">Cancel</button>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="left">
+      Privacy Policy<br>
+      Disclaimer
+    </div>
+    <div class="right">
+      <img src="resource/fb_icon.png">
+      <img src="resource/tw_icon.png">
+    </div>
+  </footer>
+  <div id="backdrop"></div>
+
+  <!-- External JavaScript files -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+  <script src="scripts/firebase-init.js"></script>
+  <script src="scripts/auth-check.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/profile.js"></script>
+  <script src="scripts/auth-logout.js"></script>
+  <script src="scripts/camera.js"></script>
+</body>
+
+</html>

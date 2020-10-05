@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#b8721d">
+
+    <title>Fennec Games - Index</title>
+
+    <link rel="apple-touch-icon" href="./resource/fennec192.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="scss/dist/css/style.css" />
+    <script src="https://kit.fontawesome.com/eab59ddc32.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav>
+      <button id="menu-toggle">Ξ</button>
+      <ul id="menu">
+        <li><a href="index.html" id="main-menu">Main Menu</a></li>
+        <li class="logged-in"><a href="profile.html">Profile</a></li>
+        <li class="logged-out"><a href="login.html" id="log-in">Log in</a></li>
+        <li class="logged-out"><a href="register.html" id="sign-up">Sign up</a></li>
+        <li class="logged-in"><a href="index.html" id="log-out">Log out</a></li>
+      </ul>
+          <h1 id="currentUserHeader">Fennec Games</h1>
+          <img src="resource/fennec.png" class="icon">
+    </nav>
+  
+    <main>
+      <img src="resource/SI_thumbnail.PNG" class="thumbnail" alt="thumbnail">
+      <button onclick="window.location.href='spaceinvader.html';" class="play-btn">Play now</button>
+      <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa debitis ullam porro eos
+        dolores hic sed itaque, neque nostrum eum mollitia distinctio aspernatur suscipit deleniti illum assumenda amet
+        cumque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur id voluptas expedita
+        quod non atque? Maxime accusamus architecto exercitationem beatae fugiat culpa? Laboriosam aliquid non sint velit
+        reprehenderit adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa dolore accusantium
+        soluta nesciunt dolor, quam perspiciatis animi incidunt libero dolores ullam? Magni, ducimus unde hic corrupti
+        quasi officia expedita. </p>
+    </main>
+  
+    <footer>
+      <div class="left">
+        Privacy Policy<br>
+        Disclaimer
+      </div>
+      <div class="right">
+        <img src="resource/fb_icon.png" alt="fb">
+        <img src="resource/tw_icon.png" alt="twttr">
+      </div>
+    </footer>
+  
+    <div id="backdrop"></div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+    <script src="scripts/firebase-init.js"></script>
+    <script src="scripts/worker.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/auth-logout.js"></script>
+  </body>
+</html>

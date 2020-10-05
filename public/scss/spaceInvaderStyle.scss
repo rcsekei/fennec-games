@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    background-color: black;
+    height: 98.9vh; 
+    width: 98.9vw; 
+
+    display: block; 
+    z-index: 0;
+}
+
+#player {
+    display: none;
+}
+
+#wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+#restart {  
+    position: relative;
+
+    width: 400px;
+    height: 200px;
+
+    left: -50%;
+
+    border: 3px solid red;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;
+
+    z-index: 1;
+    visibility: hidden;
+}
